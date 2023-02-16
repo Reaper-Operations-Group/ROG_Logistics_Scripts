@@ -8,6 +8,9 @@ class CfgPatches
    };
 };
 
+/*
+	Calling the init script when a mission is loaded
+*/
 class CfgFunctions
 {
 	class ROG
