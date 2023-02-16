@@ -1,11 +1,13 @@
-/*
-This script is executed when a mission is loaded
- */
+//Initalization Script. Executed when the mission is loaded
 
-// Checking if multiplayer or single player
 if (isServer) then {
-	//hint "Server Detected";
+	//Adding ROG Menu Action
+	onPlayerConnected {[["ROG Menu", "scripts\rogMenu.sqf"]] call CBA_fnc_addPlayerAction;};
 
-	_actionIndex = [["ROG Menu", "scripts\rogMenu.sqf"]] call CBA_fnc_addPlayerAction;
-	call extDB3_fnc_preInit;
+	//Run Script to check player
+	[] execVM "scripts\database\checkJoinedPlayer.sqf";
+
+	// Running extDB3 system commands
+	"extDB3" callExtension "9:ADD_DATABASE:Database";
+	"extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
 };
