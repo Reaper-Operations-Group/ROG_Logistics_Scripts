@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7487.502,10.423442,3170.2666};
-		dir[]={-0.49110019,-0.7645725,0.41743195};
-		up[]={-0.5825597,0.64453775,0.49517196};
-		aside[]={0.64764553,-1.4901161e-008,0.76194173};
+		pos[]={7486.4824,10.423442,3175.7578};
+		dir[]={-0.47724405,-0.79953557,-0.36466584};
+		up[]={-0.6353007,0.6006186,-0.48543814};
+		aside[]={-0.60715014,0,0.79458714};
 	};
 };
 binarizationWanted=0;
@@ -52,6 +52,9 @@ randomSeed=3567585;
 class ScenarioData
 {
 	author="[ROG]Kieranator-5050";
+	briefing=0;
+	debriefing=0;
+	saving=0;
 };
 class Mission
 {
@@ -90,7 +93,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7484.9966,5.0014391,3173.1729};
-						angles[]={0,4.7729225,-0};
+						angles[]={0,4.7729225,0};
 					};
 					side="West";
 					flags=7;
@@ -113,7 +116,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7482.2896,6.0308199,3173.4253};
-				angles[]={-0,4.8457332,0};
+				angles[]={0,4.8457332,0};
 			};
 			side="Empty";
 			flags=4;
