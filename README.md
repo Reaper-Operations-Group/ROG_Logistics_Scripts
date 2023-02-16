@@ -1,2 +1,2 @@
-# ROG_Logistics_Scripts
+# ROG Logistics Scripts
 Scripts related to the rog group
