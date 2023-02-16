@@ -13,13 +13,13 @@ class EditorData
 	class Camera
 	{
 		pos[]={7487.502,10.423442,3170.2666};
-		dir[]={-0.49110222,-0.76457596,0.41743374};
-		up[]={-0.58256245,0.64453042,0.49517545};
-		aside[]={0.64764869,-4.6748028e-008,0.76194566};
+		dir[]={-0.49110019,-0.7645725,0.41743195};
+		up[]={-0.5825597,0.64453775,0.49517196};
+		aside[]={0.64764553,-1.4901161e-008,0.76194173};
 	};
 };
 binarizationWanted=0;
-sourceName="ROG_Script_Testing";
+sourceName="ROG_Logistics_Scripts";
 addons[]=
 {
 	"A3_Characters_F",
