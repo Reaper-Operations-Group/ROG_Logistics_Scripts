@@ -97,20 +97,17 @@
 	
 	
 	
-	private playerID = (getPlayerID player); /* probably needs to be this or _this */
-	private amountOfIDs = (count playerEquipmentHashmap); /* counting the current amount in the Array to check later if a new one was added */
-	
-	
-	public retrieveInfo = playerEquipmentHashmap getOrDefault[playerID, [], true];
-	
-	playerEquipmentHashmap pushBack playerID;
-		
-	if (amountOfIDs <= (count playerEquipmentHashmap))
-		{
-			systemChat "User ID does not exist.";
-			systemChat format ["Saved ID:%1 to User Database.",playerID];
-		};
-	
+	private playerID = (getPlayerID player); /* player probably needs to be this or _this; ArmA likes to do weird things with player in MP */
+    
+    
+    public retrieveInfo = playerEquipmentHashmap getOrDefault[playerID, "notFound"];
+        
+    if (retrieveInfo == "notFound") /* If thing is not there then thing was not there and new thing get made */
+	{
+		playerEquipmentHashmap pushBack [playerID];
+		systemChat "User ID was not found.";
+		systemChat format ["Saved ID:%1 to User Database.",playerID];
+	};
 		
 		
 		
