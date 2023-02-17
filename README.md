@@ -6,3 +6,9 @@ Scripts related to the rog group
     <li><a href='http://cbateam.github.io/CBA_A3/docs/files/overview-txt.html'>CBA</a></li>
     <li><a href='https://github.com/SteezCram/extDB3'>extDB3</a></li>
 </ol>
+
+### Function Creation Guide
+<ul>
+    <li>Access parameters using : params ["_var1","_var2"]</li>
+    <li>The last value executed is the return value</li>
+</ul>
