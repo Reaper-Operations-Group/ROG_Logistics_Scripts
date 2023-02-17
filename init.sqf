@@ -9,5 +9,5 @@ if (isServer) then {
 
 	// Running extDB3 system commands
 	"extDB3" callExtension "9:ADD_DATABASE:Database";
-	"extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
+	"extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL_CUSTOM:SQL:rog.ini";
 };

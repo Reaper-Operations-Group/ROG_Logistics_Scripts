@@ -12,3 +12,11 @@ Scripts related to the rog group
     <li>Access parameters using : params ["_var1","_var2"]</li>
     <li>The last value executed is the return value</li>
 </ul>
+
+
+### Database Prepared Statements
+<ul>
+    <li>Prepared statements defined in : @extDB3/sql_custom/foo.ini</li>
+    <li><a href='https://github.com/SteezCram/extDB3/wiki/extDB3---SQL-custom'>Prepared Statements Setup</a></li>
+    <li><a href='https://github.com/SteezCram/extDB3/wiki/extDB3---sql_custom.ini'>Prepared Statements Reference</a></li>
+</ul>
