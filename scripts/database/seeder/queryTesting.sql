@@ -1,5 +1,5 @@
 #Query to get all the inventory items for all players
-SELECT * FROM 
+SELECT *  FROM 
 users AS u 
 INNER JOIN lockeritem AS li
 	ON u.uid = li.uid
@@ -7,7 +7,7 @@ INNER JOIN item as i
 	ON li.itemid = i.itemid;
     
 #Query to get all the inventory items for all players including the item type
-SELECT * FROM 
+SELECT u.uid, i.classname, it.name FROM 
 users AS u 
 INNER JOIN lockeritem AS li
 	ON u.uid = li.uid
