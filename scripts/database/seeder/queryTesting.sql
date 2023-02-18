@@ -1,3 +1,6 @@
+#Query to get all users
+SELECT concat('""',uid,'""'), concat('""',username,'""') , opCount, balance, isAdmin, isTeamLead, isQuartermaster, isActive, isLocked FROM users;
+
 #Query to get all the inventory items for all players
 SELECT *  FROM 
 users AS u 
