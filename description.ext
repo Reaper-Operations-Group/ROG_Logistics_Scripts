@@ -4,15 +4,18 @@ class CfgFunctions
 	{
 		class Database
 		{
-			class functionName {};
+			file = "scripts\database\functions";
+
+			class getAllItems {};
+			class getAllLockerItems {};
+			class getAllPlayers {};
 		};
 
 		class Generic
 		{
-			class intToBool
-			{
+			file = "scripts\generic\functions";
 
-			}
+			class intToBool{};
 		}
 	};
 };
