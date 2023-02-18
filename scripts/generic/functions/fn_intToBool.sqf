@@ -11,8 +11,7 @@
 		BOOLEAN
 
 	Examples:
-		fn_intToBool = compile preprocessFile "scripts\functions\fn_intToBool.sqf";
-		_bool = [0] call fn_intToBool;
+		_bool = [0] call ROG_fnc_intToBool;
 */
 params ["_num"];
 if (_num==0) then{
