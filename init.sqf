@@ -9,6 +9,6 @@ if (isServer) then {
 
 	// Running extDB3 system commands
 	_addDBMSG = "extDB3" callExtension "9:ADD_DATABASE:Database";
-	_addPROTOMSG = "extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL_CUSTOM:SQL:rog.ini";
+	_addPROTOMSG = "extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
 	hint format ['Connected to DB || %1 || %2 ||', _addDBMSG, _addPROTOMSG];
 };
