@@ -33,11 +33,11 @@ if (_dbResponse == 1) then {
 				[_x select 1, 
 				 _x select 2, 
 				 _x select 3, 
-				 [_x select 4] call ROG_fn_intToBool, 
-				 [_x select 5] call ROG_fn_intToBool, 
-				 [_x select 6] call ROG_fn_intToBool, 
-				 [_x select 7] call ROG_fn_intToBool, 
-				 [_x select 8] call ROG_fn_intToBool
+				 [_x select 4] call ROG_fnc_intToBool, 
+				 [_x select 5] call ROG_fnc_intToBool, 
+				 [_x select 6] call ROG_fnc_intToBool, 
+				 [_x select 7] call ROG_fnc_intToBool, 
+				 [_x select 8] call ROG_fnc_intToBool
 				]
 			];
 	} forEach _playerArr;

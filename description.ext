@@ -9,6 +9,8 @@ class CfgFunctions
 			class getAllItems {};
 			class getAllLockerItems {};
 			class getAllPlayers {};
+			class getLockerItemsByUID {};
+			class getPlayerByUID {};
 		};
 
 		class Generic
