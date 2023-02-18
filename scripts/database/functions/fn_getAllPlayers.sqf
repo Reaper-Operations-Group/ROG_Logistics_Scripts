@@ -8,7 +8,7 @@
 		HASHMAP = [ UID, [Username, OpCount, balance, isAdmin, isTeamLead, isQuartermaster, isActive, isLocked] ]
 
 	Examples:
-		_playerMap = call ROG_fn_getAllPlayers;
+		_playerMap = call ROG_fnc_getAllPlayers;
 */
 
 // Calling the response from the database
