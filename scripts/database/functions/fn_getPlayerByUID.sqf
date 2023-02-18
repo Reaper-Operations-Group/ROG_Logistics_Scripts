@@ -17,6 +17,6 @@
 
 params ["_uid"];
 
-_player = "extDB3" callExtension format ["0:SQL:SELECT * FROM users WHERE uid=%1",_uid];
+_player = "extDB3" callExtension format ["0:SQL:getPlayerByUID:%1",_uid];
 
 hint _player;

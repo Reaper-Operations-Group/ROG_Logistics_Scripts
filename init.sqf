@@ -8,6 +8,7 @@ if (isServer) then {
 	[] execVM "scripts\database\checkJoinedPlayer.sqf";
 
 	// Running extDB3 system commands
-	"extDB3" callExtension "9:ADD_DATABASE:Database";
-	"extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL_CUSTOM:SQL:rog.ini";
+	_addDBMSG = "extDB3" callExtension "9:ADD_DATABASE:Database";
+	_addPROTOMSG = "extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL_CUSTOM:SQL:rog.ini";
+	hint format ['Connected to DB || %1 || %2 ||', _addDBMSG, _addPROTOMSG];
 };
