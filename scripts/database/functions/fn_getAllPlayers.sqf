@@ -8,8 +8,7 @@
 		HASHMAP = [ UID, [Username, OpCount, balance, isAdmin, isTeamLead, isQuartermaster, isActive, isLocked] ]
 
 	Examples:
-		fn_getAllPlayers = compile preprocessFile "scripts\database\functions\fn_getAllPlayers.sqf";
-		_playerMap = call fn_getAllPlayers;
+		_playerMap = call ROG_fn_getAllPlayers;
 */
 
 // Calling the response from the database

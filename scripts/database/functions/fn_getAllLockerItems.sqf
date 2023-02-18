@@ -8,12 +8,11 @@
 		<return type>
 
 	Examples:
-		fn_getAllLockerItems = compile preprocessFile "scripts\database\functions\fn_getAllLockerItems.sqf";
-		_lockerItems = call fn_getAllLockerItems;
+		_lockerItems = call ROG_fn_getAllLockerItems;
 */
 _lockerItems = "extDB3" callExtension 
 "0:SQL:
-SELECT u.uid, i.classname, it.name FROM 
+SELECT concat('""',u.uid,'""'), concat('""',i.classname,'""'), concat('""',it.name,'""') FROM 
 users AS u 
 INNER JOIN lockeritem AS li
 	ON u.uid = li.uid
