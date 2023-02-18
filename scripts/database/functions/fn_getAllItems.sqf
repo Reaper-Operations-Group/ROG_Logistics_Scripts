@@ -2,7 +2,7 @@
 	Author: Kieran
 
 	Description:
-		Returns the players from the database
+		Returns the items from the database
 
 	Returns:
 		<return type>
