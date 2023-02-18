@@ -25,7 +25,6 @@ if (_dbResponse == 1) then {
 	
 	//Going through the array and creating a hashmap.
 	//Also converting the boolean values from the database.
-	fn_intToBool = compile preprocessFile "scripts\generic\functions\fn_intToBool.sqf";
 	_playerMap = createHashMapFromArray _playerArr;
 	{
 		_playerData = _x;
@@ -34,11 +33,11 @@ if (_dbResponse == 1) then {
 				[_x select 1, 
 				 _x select 2, 
 				 _x select 3, 
-				 [_x select 4] call fn_intToBool, 
-				 [_x select 5] call fn_intToBool, 
-				 [_x select 6] call fn_intToBool, 
-				 [_x select 7] call fn_intToBool, 
-				 [_x select 8] call fn_intToBool
+				 [_x select 4] call ROG_fn_intToBool, 
+				 [_x select 5] call ROG_fn_intToBool, 
+				 [_x select 6] call ROG_fn_intToBool, 
+				 [_x select 7] call ROG_fn_intToBool, 
+				 [_x select 8] call ROG_fn_intToBool
 				]
 			];
 	} forEach _playerArr;
