@@ -26,7 +26,7 @@ if (_dbResponse == 1) then {
 	
 	//Going through the array and creating a hashmap.
 	//Also converting the boolean values from the database.
-	fn_intToBool = compile preprocessFile "scripts\functions\fn_intToBool.sqf";
+	fn_intToBool = compile preprocessFile "scripts\generic\functions\fn_intToBool.sqf";
 	_playerMap = createHashMapFromArray _playerArr;
 	{
 		_playerData = _x;

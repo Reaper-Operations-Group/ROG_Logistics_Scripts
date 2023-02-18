@@ -1,0 +1,18 @@
+class CfgFunctions
+{
+	class ROG
+	{
+		class Database
+		{
+			class functionName {};
+		};
+
+		class Generic
+		{
+			class intToBool
+			{
+
+			}
+		}
+	};
+};
