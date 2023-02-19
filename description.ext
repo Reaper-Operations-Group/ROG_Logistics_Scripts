@@ -19,5 +19,12 @@ class CfgFunctions
 
 			class intToBool{};
 		}
+
+		class Lockers
+		{
+			file = "scripts\lockers\functions";
+
+			class initPlayerLocker{};
+		}
 	};
 };
