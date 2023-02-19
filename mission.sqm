@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=6;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={7489.2524,11.124833,3176.1462};
-		dir[]={-0.64552599,-0.63288146,-0.42750117};
-		up[]={-0.52766174,0.77424872,-0.34944525};
-		aside[]={-0.55214965,-1.4901161e-008,0.833745};
+		pos[]={7492.3755,14.725148,3178.5403};
+		dir[]={-0.63136679,-0.73620826,-0.24366674};
+		up[]={-0.68683255,0.67675501,-0.26507294};
+		aside[]={-0.36005157,0,0.93293238};
 	};
 };
 binarizationWanted=0;
@@ -87,7 +87,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=8;
 		class Item0
 		{
 			dataType="Group";
@@ -123,13 +123,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7482.2896,6.0308199,3173.4253};
-				angles[]={0,4.8457332,0};
+				position[]={7482.1733,6.0308199,3174.0596};
+				angles[]={0,4.7431765,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="locker";
 			};
 			id=2;
 			type="Metal_Locker_F";
@@ -199,6 +200,91 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7482.1479,6.0308199,3173.3867};
+				angles[]={0,4.7431765,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="locker_1";
+			};
+			id=6;
+			type="Metal_Locker_F";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7482.1396,6.0308199,3172.6917};
+				angles[]={0,4.7431765,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="locker_2";
+			};
+			id=7;
+			type="Metal_Locker_F";
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7482.1279,6.0308199,3172.0278};
+				angles[]={0,4.7431765,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="locker_3";
+			};
+			id=8;
+			type="Metal_Locker_F";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7482.0654,6.0308199,3171.2795};
+				angles[]={0,4.7431765,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="locker_4";
+			};
+			id=9;
+			type="Metal_Locker_F";
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7482.0273,6.0308199,3170.4958};
+				angles[]={0,4.7431765,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="locker_5";
+			};
+			id=10;
+			type="Metal_Locker_F";
 		};
 	};
 };
