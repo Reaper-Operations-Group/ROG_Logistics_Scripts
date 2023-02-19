@@ -19,8 +19,9 @@ if (isServer) then {
 
 
 	//-------------------------------------------------
-	onPlayerConnected{
-		
+	addMissionEventHandler ["PlayerConnected", {
+		params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
+
 		//Adding Menu Action
 		[["ROG Menu", "scripts\rogMenu.sqf"]] call CBA_fnc_addPlayerAction;
 
@@ -30,10 +31,24 @@ if (isServer) then {
 		} else {
 			//Player locker not loaded
 			//hint "Player not loaded";
-			[LockerArr, ROG_LockerCounter, _uid] call ROG_fnc_initPlayerLocker;
-			ROG_LockerUIDs set [_uid, 1];
-			ROG_LockerCounter = ROG_LockerCounter + 1;
+
+			//Checking if the UID is in the database already
+			_players = call ROG_fnc_getAllPlayers;
+			if (_uid in _players) then {
+			
+				//Initialize locker if already in the database
+				[LockerArr, ROG_LockerCounter, _uid] call ROG_fnc_initPlayerLocker;
+				ROG_LockerUIDs set [_uid, 1];
+				ROG_LockerCounter = ROG_LockerCounter + 1;
+			
+			} else {
+
+				// Insert the new player to the database
+				_insertRespnseStr = "extDB3" callExtension format ["0:SQL:INSERT INTO users (uid, username) VALUES ('%1','%2')", _uid, [_name, "'", '"'] call CBA_fnc_replace ];
+
+			}
+
 		};
-		
-	};
+	}];
+
 };

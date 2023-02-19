@@ -9,7 +9,10 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 
 INSERT INTO users (uid, username) 
-VALUES (1111111111, 'Test User 1'), (2222222222, 'Test User 2'), (3333333333, 'Test User 3'), (76561198102296716, 'M. Jager Kieran');
+VALUES (1111111111, 'Test User 1'), (2222222222, 'Test User 2'), (3333333333, 'Test User 3');
+
+INSERT INTO users (uid, username)
+VALUES ("76561198102296716", "Kieran");
 
 INSERT INTO itemtype (name)
 VALUES 
