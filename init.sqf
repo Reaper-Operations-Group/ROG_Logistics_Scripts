@@ -2,6 +2,7 @@
 
 if (isServer) then {
 	// Running extDB3 system commands
+	"extDB3" callExtension "9:RESET";
 	_addDBMSG = "extDB3" callExtension "9:ADD_DATABASE:Database";
 	_addPROTOMSG = "extDB3" callExtension "9:ADD_DATABASE_PROTOCOL:Database:SQL:SQL";
 	hint format ['Connected to DB || %1 || %2 ||', _addDBMSG, _addPROTOMSG];
