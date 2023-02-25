@@ -46,7 +46,7 @@ if (isServer) then {
 			} else {
 
 				// Insert the new player to the database
-				_insertRespnseStr = "extDB3" callExtension format ["0:SQL:INSERT INTO users (uid, username) VALUES ('%1','%2')", _uid, [_name, "'", '"'] call CBA_fnc_replace ];
+				_insertRespnseStr = "extDB3" callExtension format ["0:SQL:INSERT INTO users (uid, username) VALUES ('%1','%2')", _uid, [ ([_name, '"', ''] call CBA_fnc_replace), "'","" ] call CBA_fnc_replace ];
 
 			}
 

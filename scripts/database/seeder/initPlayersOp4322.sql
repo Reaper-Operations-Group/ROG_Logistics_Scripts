@@ -10,7 +10,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 INSERT INTO users (uid, username) 
 VALUES 
-(76561198102296716, 'M. "Jager" Kieran'), 
+(76561198102296716, 'M. Jager Kieran'), 
 (76561198278988766, 'Ajax'), 
 (76561198047902044, 'Azuki'),
 (76561197983685912, 'Moose'),
