@@ -38,7 +38,8 @@ if (isServer) then {
 			if (_uid in _players) then {
 			
 				//Initialize locker if already in the database
-				[LockerArr, ROG_LockerCounter, _uid] call ROG_fnc_initPlayerLocker;
+				_name = _players get _uid select 0;
+				[LockerArr, ROG_LockerCounter, _uid, _name] call ROG_fnc_initPlayerLocker;
 				ROG_LockerUIDs set [_uid, 1];
 				ROG_LockerCounter = ROG_LockerCounter + 1;
 			
