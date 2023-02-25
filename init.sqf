@@ -24,7 +24,7 @@ if (isServer) then {
 		params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
 
 		//Adding Menu Action
-		[["ROG Menu", "scripts\rogMenu.sqf"]] call CBA_fnc_addPlayerAction;
+		//[["ROG Menu", "scripts\rogMenu.sqf"]] call CBA_fnc_addPlayerAction;
 
 		if (_uid in ROG_LockerUIDs) then {
 			//Player locker was already loaded
